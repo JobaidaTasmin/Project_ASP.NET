@@ -31,7 +31,7 @@ CREATE TABLE childrens
    childrenId INT IDENTITY PRIMARY KEY,
    childrenName NVARCHAR(40) NOT NULL,
    picture NVARCHAR(150)NOT NULL,
-   branchLd INT NOT NULL REFERENCES branches(branchId),
+   branchId INT NOT NULL REFERENCES branches(branchId),
    guardianId INT NOT NULL REFERENCES guardians(guardianId)  
  )
 GO
